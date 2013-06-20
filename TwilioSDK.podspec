@@ -12,5 +12,8 @@ Pod::Spec.new do |s|
   s.preserve_paths = '**/*.a'
   s.libraries = 'TwilioClient', 'ssl', 'crypto'
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'SystemConfiguration'
-  s.xcconfig  =  { 'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TwilioSDK/Twilio"' }
+  s.xcconfig  =  {
+                  'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TwilioSDK/Twilio"',
+                  'OTHER_LD_FLAGS' => '$(inheirited) -ObjC -all_load'
+                }
 end
