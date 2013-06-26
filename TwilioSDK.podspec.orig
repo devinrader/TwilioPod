@@ -21,3 +21,4 @@ end
                   'OTHER_LD_FLAGS' => '$(inheirited) -ObjC -all_load'
                 }
 end
+>>>>>>> 4890f258c8535d33f3873f4f52564372bbf7255e
