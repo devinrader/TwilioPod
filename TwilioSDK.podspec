@@ -14,6 +14,6 @@ Pod::Spec.new do |s|
   s.frameworks = 'AudioToolbox', 'AVFoundation', 'CFNetwork', 'SystemConfiguration'
   s.xcconfig  =  {
                   'LIBRARY_SEARCH_PATHS' => '"$(PODS_ROOT)/TwilioSDK/Twilio"',
-                  'OTHER_LD_FLAGS' => '$(inherited) -ObjC -all_load'
+                  'OTHER_LD_FLAGS' => '$(inherited) -ObjC'
                 }
 end
